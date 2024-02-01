@@ -8,7 +8,7 @@ type DayListItem = {
 export default function DayListItem(props: DayListItem) {
   const { day } = props;
   return (
-    <Link href={`/app/day${day}`} asChild>
+    <Link href={`/day${day}`} asChild>
       <Pressable style={styles.box}>
         <Text style={styles.text}>{day}</Text>
       </Pressable>
